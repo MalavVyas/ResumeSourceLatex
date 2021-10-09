@@ -1,0 +1,155 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\usepackage{hyperref}
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Malav Vyas}
+\tagline{State University of New York, Buffalo}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%\photo{3.3cm}{profile.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{malavdha@buffalo.edu}
+   \phone{716-361-7627}
+%  \mailaddress{Address, Street, 00000 County}
+  \location{Buffalo, New York}
+%  \homepage{marissamayr.tumblr.com/}
+%  \twitter{@marissamayer}
+\linkedin{\textbf{malav-vyas-9580a19a}}
+\github{https://github.com/malavvyas}
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\begin{fullwidth}
+\cvsection{About}
+A self-motivated Security Analyst, highly committed to shaping the future of cyber security and making the internet a safer place. I maintain passion for protecting businesses and ability to deliver consistently exceptional performance under high pressure
+\end{fullwidth}
+
+
+\cvsection[page1sidebar]{Education}
+\cvevent{Master of Science (CSE) - 3.2 GPA}{State University of New York, University at Buffalo}{ January 2021 -- May 2022 (expected)}{}
+\smallskip
+\divider
+
+\cvevent{Bachelor's of Engineering (IT) - 8.56 CGPA}{Gujarat Technological University}{ August 2016 -- May 2020}{}
+\smallskip
+\cvsection{Experience}
+
+\cvevent{Teaching Assistant}{State University of New York, Buffalo}{August 2021 -- Present}{Buffalo, New York}
+\begin{itemize}
+\item Teaching Assistant for courses Information Technology Management and Applied Business Programming.
+\smallskip
+\item Guiding Students through critical information technology concepts of python programming and Operating Systems
+\end{itemize}
+
+\divider
+
+\cvevent{Research Assistant}{State University of New York, Buffalo}{May 2021 -- July 2021}{Buffalo, New York}
+\begin{itemize}
+\item Instructor for National Security Agency powered Gencyber Cyber security training research project.
+\smallskip
+\item Developed Stealthy Malware and Red Team tools development for Attack Simulations.
+\end{itemize}
+
+\divider
+
+\cvevent{Software Engineer}{SNDK Corp}{June 2020 - December 2020   }{Ahmedabad, India}
+\begin{itemize}
+\item Lead Penetration Testing for Web/Mobile/IoT/Network products of the organization while collaborating with the development team of 20 for patches and bug fixes
+\item Performed Incident Response for Internal AWS cloud Infrastructure
+\end{itemize}
+
+\divider
+
+\cvevent{Security Analyst}{Infovys Inc}{October 2018 - May 2020}{Nashik, India}
+\begin{itemize}
+\item Performed Security Testing for Web/Android applications as well as infrastructure
+\smallskip
+\item Lead developer in team of five for Flagship Antivirus of the organization.
+\end{itemize}
+
+%\divider
+\clearpage
+
+\cvsection[page2sidebar]{Workshops Presented}
+\begin{itemize}
+    \item Exploit Development 101 ( 2 Day Workshop )
+    \item Egg Hunting Techniques for Exploit Development
+    \item x86 Assembly - Preparing for the battle
+    \item Windows Process Injection
+    \item Linux Process Injection
+\end{itemize}
+\cvsection{Paper Presentation}
+\cvproject{Dynamic Taint Analysis for Automatic Detection, Analysis and Signature Generation of Exploits on Commodity Softwares}
+\smallskip
+\begin{itemize}
+    \item Paper by James Newsome and Dawn Song
+    \item \href{https://docs.google.com/presentation/d/1cTt7Vd5Duzwt5Z3EhzdaR0s-DWtVZ0qUQWKBs7SOBKE/edit?usp=sharing}{Presentation}
+\end{itemize}
+\smallskip
+\divider
+
+\cvproject{FIE on Firmware: Finding Vulnerabilities in Embedded Systems using Symbolic Execution}
+\smallskip
+\begin{itemize}
+    \item Paper by Drew Davidson, Benjamin Moench et al
+    \item \href{https://docs.google.com/presentation/d/1haWp3kqj5WqxxRPOOG0dyKisTX9GStP0hjPCJlNbUNM/edit?usp=sharing}{Presentation}
+\end{itemize}
+
+\cvsection{Research}
+\cvproject{Pressing Importance of IoT Security}
+\begin{itemize}
+    \item In this Paper I elucidate on misconfigurations in IoT devices and their impact. I also show my findings on why IoT security is so needed.  
+\end{itemize}
+\divider
+
+\cvproject{ARM CTF Platform (Ongoing)}
+\begin{itemize}
+    \item In this ongoing research, I jointly work in team of 5 for development of ARM CTF platform where we develop exploit development challenges for less explored CPU architectures such as ARM Cortex A, Cortex M
+\end{itemize}
+\divider
+
+\cvproject{Exploit Development}
+\begin{itemize}
+    \item CVE-2020-20127 - Discovered Buffer Overflow Vulnerability in MP3 CD ripper software.
+    \item Published Buffer overflow Exploits for SM Player and GetGo Download Manager.
+\end{itemize}
+
+\smallskip
+\divider
+
+\smallskip
+
+
+\nocite{*}
+
+\end{document}
